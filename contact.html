@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenant Auto - Mobile Detailing - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html">
+            <img src="logo/logo7_black.png" alt="Revenant Auto Detailing Logo" class="logo">
+        </a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="hamburger">&#9776;</div>
+    </nav>
+
+    <section id="contact-form" class="contact-form">
+        <h1>Contact Form</h1>
+        <form id="quoteForm" method="POST" action="contact_form.php" enctype="multipart/form-data">
+            <div class="car-entry">
+                <label for="carType">Car Type:</label>
+                <select name="carType[]" class="car-type">
+                    <option value="sedan">Coupe or Sedan</option>
+                    <option value="suv">SUV, Van or Truck</option>
+                </select>
+        
+                <label for="packageType">Package Type:</label>
+                <select name="packageType[]" class="package-type"></select>
+            </div>
+        
+            <button type="button" id="addCar">➕ Add Another Package</button>
+        
+            <h3>Total Price: <span id="totalPrice">$0</span></h3>
+        
+            <label for="name"><span class="required">*</span> Name:</label>
+            <input type="text" name="name" id="name" required>
+        
+            <label for="email"><span class="required">*</span> Email:</label>
+            <input type="email" name="email" id="email" required>
+        
+            <label for="phone"><span class="required">*</span> Phone:</label>
+            <input type="tel" name="phone" id="phone" required>
+        
+            <label for="address"><span class="required">*</span> Address:</label>
+            <input type="text" name="address" id="address" required>
+        
+            <label for="message">Message: (Optional)</label>
+            <textarea name="message" id="message"></textarea>   
+        
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <section id="company-info" class="company-info">
+        <h2>Contact Us</h2>
+        <p>📍 Serving Hamilton, Ontario and surrounding areas</p>
+        <p>📞 Call or text us at: <a href="tel:+2892608406">+1 (289) 260-8406</a></p>
+        <p>📧 Email: <a href="mailto:millerworkzltd@outlook.com">brendan@revenantauto.com</a></p>
+        <p>🕒 Hours:</p>
+        <ul style="list-style-type:none; padding: 0; margin: 0;">
+            <li>Monday - Friday: 9 a.m. – 5:30 p.m.</li>
+            <li>Saturday - Sunday: 11 a.m. - 4 p.m.</li>
+        </ul>
+        <div id="social_links_container"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Revenant Auto - All Rights Reserved.</p>
+        <p>Website by <a href="https://www.bnosisltd.com" target="_blank">Bnosis Ltd.</a></a></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,195 @@
+.pricing-table {
+    max-width: 1000px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9;
+}
+
+.pricing-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: black;
+    margin-top: 75px;
+}
+
+/* Main Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+th {
+    background: black;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+td {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Alternate row colors */
+tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+/* Hover effect */
+tr:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+/* 📱 Mobile-Friendly Table (Stacked Layout) */
+@media (max-width: 768px) {
+    .pricing-table {
+        padding: 10px;
+    }
+
+    table {
+        display: block;
+        border: none;
+    }
+
+    thead {
+        display: none; /* Hide table headers */
+    }
+
+    tbody {
+        display: block;
+    }
+
+    tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 10px;
+        background: white;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    td {
+        display: block;
+        text-align: left;
+        font-size: 1rem;
+        padding: 10px;
+        border: none;
+        position: relative;
+    }
+
+    td:before {
+        content: attr(data-label);
+        font-weight: bold;
+        color: black;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 5px;
+        font-size: 0.9rem;
+    }
+}
+
+#service-details {
+    background-color: #f9f9f9; /* White background for a cleaner look */
+    padding: 40px 30px; /* Increased padding for a more spacious feel */
+    margin-top: 40px; /* Space between sections */
+    border-radius: 15px; /* Rounded corners for a smooth design */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for depth */
+    max-width: 1200px; /* Limit max-width for better content layout */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#service-details h2 {
+    font-size: 32px; /* Larger font for the heading */
+    font-weight: 700;
+    color: #333; /* Darker text for better readability */
+    margin-bottom: 30px; /* More space after the title */
+    text-align: center;
+    letter-spacing: 1px; /* Slight letter spacing for a polished look */
+}
+
+#service-details ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Even spacing between items */
+}
+
+#service-details li {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    position: relative;
+    padding-left: 25px; /* Space for custom bullet points */
+}
+
+#service-details li::before {
+    content: "•"; /* Custom bullet point */
+    font-size: 24px;
+    color: gold; /* Accent color for bullets */
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#service-details li strong {
+    font-weight: 600; /* Slightly bolder for the service names */
+    color: #333; /* Dark color for emphasis */
+}
+
+#service-details p {
+    font-size: 20px; /* Larger font size for the paragraph */
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    margin-top: 30px;
+    font-style: italic;
+}
+
+#service-details p strong {
+    color: #333; /* Accent color for highlighting Grapehine Wax */
+    font-weight: bold;
+}
+
+#service-details p a {
+    color: gold; /* Blue link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+#service-details p a:hover {
+    text-decoration: underline;
+    color: gold; /* Change color when hovered for a dynamic feel */
+}
+
+@media (max-width: 768px) {
+    /* Responsive design for smaller screens */
+    #service-details {
+        padding: 30px 20px;
+        margin-top: 30px;
+    }
+
+    #service-details h2 {
+        font-size: 28px;
+    }
+
+    #service-details p {
+        font-size: 18px;
+    }
+}

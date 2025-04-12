@@ -1,0 +1,81 @@
+/* General Styles for Services Page */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services h1 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: black;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-card h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: black;
+}
+
+.service-card p {
+    font-size: 1rem;
+    margin-top: 10px;
+    color: #555;
+}
+
+.service-requirements {
+    padding: 3rem 2rem;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+    text-align: center;
+}
+
+.service-requirements h2 {
+    font-size: 2rem;
+    color: #DAA520; 
+    text-shadow: 0 0 2px #00000033;
+    margin-bottom: 1rem;
+}
+
+.service-requirements p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.service-requirements ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.service-requirements li {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+    color: #444;
+}

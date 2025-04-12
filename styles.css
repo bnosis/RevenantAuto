@@ -1,0 +1,310 @@
+@import url('services.css');
+@import url('pricing.css');
+@import url('contact.css');
+@import url('gallery.css');
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: white;
+    color: black;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px 20px;
+    background: black;
+    color: white;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .content {
+    max-width: 1200px; /* Max width for navbar content */
+    margin: 0 auto; /* Centers the navbar content */
+    width: 100%; /* Ensures it takes up full width within its container */
+}
+
+/* Logo */
+.logo {
+    max-width: 150px;
+}
+
+/* Navbar Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.nav-links a.active {
+    text-decoration: none;
+    color: gold;
+    font-size: 1.2rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: gold;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: black;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .hamburger {
+        display: block;
+    }
+
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding: 20px;
+    max-width: 1200px; /* Max width for the hero content */
+    margin: 0 auto; /* Centers the hero section */
+}
+
+h1 {
+    font-size: 3rem;
+    color: black;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.cta {
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    background: black;
+    color: gold;
+}
+
+.cta:hover {
+    background: gold;
+    color: black;
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.about-section {
+    background: #f5f5f5;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1100px;
+    margin: auto;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 500px;
+    padding: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔹 Mobile Responsive Styling */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column; /* Stack image & text */
+        text-align: center;
+    }
+
+    .about-text {
+        text-align: center; /* Center text for mobile */
+        padding: 10px;
+    }
+
+    .about-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .about-image {
+        max-width: 100%;
+        padding: 10px;
+    }
+
+    .about-image img {
+        border-radius: 5px;
+        box-shadow: none;
+    }
+}
+
+/* Footer */
+.footer {
+    background: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 -8px 12px rgba(0, 0, 0, 0.3);
+}
+.footer p {
+    color: white;
+    font-size: 0.8rem;
+}
+
+.footer a{
+    text-decoration: none;
+    color: gold;
+}
+
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.footer .content {
+    max-width: 1200px; /* Max width for footer content */
+    margin: 0 auto; /* Centers the footer content */
+    width: 100%; /* Ensures it takes up full width within its container */
+}
+
+/* Contact Section */
+.company-info {
+    padding: 30px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Heading */
+.company-info h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Paragraphs */
+.company-info p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+/* Phone and Email links */
+.company-info a {
+    color: gold; /* Blue color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+h2 a:hover {
+    text-decoration: underline !important;
+}
+
+.company-info a:hover {
+    text-decoration:underline;
+}
+
+/* Hours List */
+.company-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.company-info ul li {
+    margin: 5px 0;
+}
+
+/* Social Links Container (if applicable) */
+#social_links_container {
+    margin-top: 20px;
+}
+
+#social_links_container a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #555;
+    text-decoration: none;
+}
+
+#social_links_container a:hover {
+    color: #007BFF; /* Social links hover effect */
+}

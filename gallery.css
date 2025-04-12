@@ -1,0 +1,74 @@
+/* GALLERY STYLING */
+.gallery {
+    padding: 4rem 2rem;
+    background: #f9f9f9;
+    text-align: center;
+  }
+  
+  .gallery h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+    margin-top: 10px;
+  }
+  
+  .gallery p {
+    color: #444;
+    margin-bottom: 3rem;
+  }
+  
+  .gallery-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .gallery-item {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    padding: 1rem;
+    overflow: hidden;
+  }
+  
+  .gallery-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  .before-after {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .before-img,
+  .after-img {
+    flex: 1;
+    overflow: hidden;
+    border-radius: 10px;
+    max-height: 300px;
+  }
+  
+  .before-img img,
+  .after-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .before-img img:hover,
+  .after-img img:hover {
+    transform: scale(1.03);
+  }
+  
+  /* Optional slider bar */
+  .slider-container {
+    display: none; /* Hidden unless you implement real sliders */
+  }
